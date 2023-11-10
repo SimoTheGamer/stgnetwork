@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header.header {
+    transition: 2s;
+    height: 350px;
+    background-image: url("../img/lobby-principale.png");
+    background-size: cover;
+    
+    background-color: rgba(128, 128, 128, 0.74);
+    background-blend-mode: luminosity;
+    
+}
+
+button.action-button-header {
+    padding: 10px;
+    box-shadow: -9px -5px 33px -15px #ff4901;
+    border-bottom: 0.2rem solid #ca7034;
+    transition: 0.8s;
+}
+
+button.action-button-header:hover {
+    box-shadow: -24px -5px 33px -15px #ff4901;
+    border-bottom: 0.2rem solid #ff4901;
+    background-color: rgb(255, 255, 255);
+}
+
+button.action-button-header p {
+    white-space: nowrap;
+    margin: 0px;
+}
+
+button.action-button-header p:nth-child(1) {
+    color: rgb(255, 102, 0);
+    text-transform: uppercase;
+}
+
+a.nav-link {
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    text-align: center;
+    /*font-variant: small-caps;*/
+}
+
+@media screen and (max-width: 1100px) {
+    .action-button-header {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+    }
+}
